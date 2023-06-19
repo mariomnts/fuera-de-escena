@@ -1,0 +1,412 @@
+// Year styles
+.year {
+  border-top: 2px solid $primary;
+  color: $primary;
+}
+
+.year .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  padding: 0 110px;
+
+  @include bkYearColumns {
+    padding: 0 86px;
+  }
+
+  @include bkYearSlider {
+    padding: 0 5%;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: -20px;
+  }
+
+  .body {
+    margin: 40px auto 85px;
+    max-width: 1100px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 30px;
+
+      .col3 {
+        width: 30%;
+      }
+
+      .col35 {
+        width: 35%;
+      }
+
+      .col4 {
+        width: 40%;
+      }
+
+      .col45 {
+        width: 45%;
+      }
+
+      .col5 {
+        width: 50%;
+      }
+
+      .col55 {
+        width: 55%;
+      }
+
+      .col6 {
+        width: 60%;
+      }
+
+      .col65 {
+        width: 65%;
+      }
+    }
+  }
+
+  .footer {
+    z-index: 5;
+    pointer-events: none;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-family: "Thunder", serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px 0;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-family: "Thunder", serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0;
+    line-height: 1;
+    font-size: 2.25em;
+    letter-spacing: 0.9px;
+
+    &.small {
+      font-size: 1.9em;
+      letter-spacing: 0.8px;
+      line-height: 1.03;
+    }
+  }
+
+  h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 2.2em;
+    margin: 0;
+    padding: 15px 0;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 1.065em;
+    line-height: 1.25;
+
+    &.small {
+      font-size: 0.9em;
+      text-align: center;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  figure {
+    margin: 15px auto;
+    width: 90%;
+
+    img {
+      border: 1px solid $primary;
+      border-radius: 20px;
+      width: 100%;
+    }
+
+    &.outlined {
+      padding: 15px;
+      border-radius: 15px;
+      background: #fff;
+      border: 1px solid $primary;
+      box-shadow: 10px 10px 0px 0px $primary;
+
+      img {
+        border: none;
+        border-radius: 0;
+      }
+
+      figcaption {
+        font-size: 1em;
+        text-align: center;
+        padding: 10px 0 5px;
+      }
+    }
+  }
+
+  .video {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .audio {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .note {
+    font-size: 0.88em;
+    position: relative;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background: #fff;
+    border: 1px solid $primary;
+    box-shadow: 8px 8px 0px 0px $primary;
+
+    &::before {
+      content: "*";
+      font-family: "Inter", sans-serif;
+      font-weight: 300;
+      font-size: 8.2em;
+      position: absolute;
+      top: -10px;
+      left: -20px;
+      line-height: 65px;
+    }
+  }
+
+  .cloud {
+    background: url("~/assets/decorations/cloud_text.svg") center no-repeat;
+    background-size: contain;
+  }
+
+  @include bkYear {
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    h3 {
+      font-size: 2em;
+    }
+
+    .body {
+      .row {
+        gap: 40px;
+
+        & > div {
+          width: 100% !important;
+        }
+
+        figure,
+        & > div > img {
+          max-width: min(100%, 400px);
+          margin: 0 auto;
+          display: block;
+        }
+
+        .video,
+        .audio {
+          max-width: 500px;
+          width: 100%;
+        }
+      }
+
+      p.small {
+        max-width: min(100%, 400px);
+        margin: 10px auto;
+      }
+    }
+  }
+
+  @include bkYearColumns {
+    .header {
+      margin-top: 40px;
+    }
+
+    .body {
+      justify-content: flex-start;
+      .row {
+        gap: 20px;
+        flex-direction: column;
+
+        & > div {
+          &.rfirst {
+            order: -1;
+          }
+        }
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p.small {
+        max-width: min(100%, 400px);
+        margin: 10px auto;
+      }
+    }
+  }
+
+  @include bkYearSlider {
+    .header {
+      margin-top: 20px;
+    }
+
+    .body {
+      margin: 30px auto;
+    }
+  }
+}
+
+// Animations
+.year .item {
+  h1 {
+    animation: header 0.5s 0.2s backwards;
+    animation-play-state: paused;
+  }
+
+  .footer img {
+    animation: footer 0.5s 0.2s backwards;
+    animation-play-state: paused;
+  }
+
+  .video .cover,
+  .video iframe,
+  .video video,
+  .audio,
+  figure.outlined img {
+    animation: scale 0.5s 0.2s backwards;
+    animation-play-state: paused;
+  }
+
+  .rel {
+    .float,
+    .float0,
+    .float1 {
+      animation: scaleBig 0.5s 0.2s backwards;
+      animation-play-state: paused;
+    }
+  }
+
+  .row > div {
+    figure:not(.outlined),
+    & > img {
+      animation: scale 0.5s 0.2s backwards;
+      animation-play-state: paused;
+    }
+  }
+
+  .row > div:first-of-type {
+    figure:not(.outlined),
+    & > img {
+      animation: left 0.5s 0.2s backwards;
+      animation-play-state: paused;
+    }
+  }
+
+  .row > div:last-of-type {
+    figure:not(.outlined),
+    & > img {
+      animation: right 0.5s 0.2s backwards;
+      animation-play-state: paused;
+    }
+  }
+
+  &.active * {
+    animation-play-state: running !important;
+  }
+
+  @keyframes footer {
+    0% {
+      transform: translateY(1000px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes header {
+    0% {
+      opacity: 0;
+      filter: blur(80px);
+    }
+
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+  @keyframes right {
+    0% {
+      transform: translateX(1000px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes left {
+    0% {
+      transform: translateX(-1000px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(0);
+      filter: blur(40px);
+    }
+
+    60% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes scaleBig {
+    0% {
+      transform: scale(0);
+    }
+
+    60% {
+      transform: scale(1.3);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}

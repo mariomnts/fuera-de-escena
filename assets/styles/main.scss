@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
+
+@font-face {
+  font-family: "Thunder";
+  src: url("font/Thunder-ExtraBoldLC.woff2") format("woff2"),
+    /* Modern Browsers */ url("font/Thunder-ExtraBoldLC.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Thunder";
+  src: url("font/Thunder-BoldLC.woff2") format("woff2"),
+    /* Modern Browsers */ url("font/Thunder-BoldLC.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Thunder";
+  src: url("font/Thunder-LC.woff2") format("woff2"),
+    /* Modern Browsers */ url("font/Thunder-LC.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__nuxt,
+#__layout,
+.h100 {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  color: $primary;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.circle {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    border: 1px solid $primary;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
+  &.white {
+    &::before {
+      border-color: #fff;
+    }
+  }
+}
+
+.circle-big {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: -9%;
+    width: 112%;
+    height: 120%;
+    border-radius: 50%;
+    border: 2px solid $primary;
+    z-index: -1;
+    opacity: 0.65;
+  }
+
+  &.white {
+    &::before {
+      border-color: #fff;
+    }
+  }
+}
+
+.video {
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 15px;
+  background: $primary;
+  border: 1px solid $primary;
+
+  & > div {
+    position: relative;
+
+    .cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+    }
+  }
+
+  .cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.25);
+    background-color: $primary;
+
+    &:hover {
+      box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.1);
+
+      & > div {
+        transform: scale(1.035);
+        background: rgba(255, 255, 255, 1);
+      }
+    }
+
+    img {
+      width: 100%;
+      padding-left: 4px;
+    }
+
+    & > div {
+      width: 20%;
+      transition: all 0.2s ease-in-out;
+      background: rgba(255, 255, 255, 0.65);
+      padding: 5%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $primary;
+    }
+  }
+}
+
+.social {
+  margin: 10px;
+  background: #fff;
+  border: 1px solid $primary;
+  border-radius: 50%;
+  padding: 11px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+
+  img {
+    width: 100%;
+  }
+
+  &:hover {
+    background: $primary;
+    color: #fff;
+
+    img {
+      filter: invert(99%) sepia(3%) saturate(494%) hue-rotate(184deg)
+        brightness(114%) contrast(100%);
+    }
+  }
+
+  &:active {
+    transform: scale(1.2);
+    transition: none;
+  }
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+// Animations
+@keyframes pulse0 {
+  0% {
+    transform: scale(1);
+  }
+  4% {
+    transform: scale(1.1);
+  }
+  8% {
+    transform: scale(1, 0);
+  }
+  10% {
+    transform: scale(0);
+  }
+
+  15% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse1 {
+  0% {
+    transform: scale(1);
+  }
+  4% {
+    transform: scale(1.1);
+  }
+  8% {
+    transform: scale(0, 1);
+  }
+  10% {
+    transform: scale(0);
+  }
+
+  15% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(1);
+  }
+  4% {
+    transform: scale(0.9);
+  }
+  8% {
+    transform: scale(1.1);
+  }
+  12% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
