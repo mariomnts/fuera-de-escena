@@ -113,7 +113,7 @@ const year = 1991;
     gap: 0px !important;
 
     & > div:last-of-type {
-      p:first-of-type {
+      & > p:first-of-type {
         margin-top: 0 !important;
       }
     }
