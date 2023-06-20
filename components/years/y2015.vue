@@ -28,7 +28,7 @@
 
             <div class="col5 rfirst">
               <h1>
-                No fue sucicio. <br />
+                No fue suicidio. <br />
                 Fue <span class="circle-big">asesinato social</span>
               </h1>
 
