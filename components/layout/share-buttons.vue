@@ -8,6 +8,10 @@
       <img src="~/assets/icons/share.svg" alt="Compartir" />
     </button>
 
+    <button @click="shareIG" v-if="canShareNative" class="social share-native">
+      <img src="~/assets/icons/ig.svg" alt="Compartir en Instagram" />
+    </button>
+
     <button
       @click="shareClipboard"
       class="social share-link clipboard"
@@ -103,7 +107,7 @@ onMounted(async () => {
 async function shareNative() {
   try {
     if (navigator?.canShare && navigator.canShare({ text, title, files })) {
-      await navigator.share({ text, title, files });
+      await navigator.share({ files, url });
     } else {
       await navigator.share({ text, title });
     }
@@ -112,6 +116,18 @@ async function shareNative() {
   }
 
   event("share", { method: "native", year: props.year, decade });
+}
+
+async function shareIG() {
+  try {
+    if (navigator?.canShare && navigator.canShare({ files })) {
+      await navigator.share({ files });
+    }
+  } catch (err) {
+    console.error(err);
+  }
+
+  event("share", { method: "native-ig", year: props.year, decade });
 }
 
 const triggeredClipboard = ref(false);
