@@ -107,7 +107,7 @@ onMounted(async () => {
 async function shareNative() {
   try {
     if (navigator?.canShare && navigator.canShare({ text, title, files })) {
-      await navigator.share({ files, url });
+      await navigator.share({ text, title, files });
     } else {
       await navigator.share({ text, title });
     }
