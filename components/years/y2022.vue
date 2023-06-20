@@ -55,7 +55,7 @@
         <div class="footer">
           <nuxt-img
             format="webp"
-            sizes="400px:400px 900px:650px 1000px:500px 1100px:550px"
+            sizes="400px:400px 900px:900px 1000px:1000px 1100px:1100px"
             src="/img/2022_1.png"
           />
         </div>
@@ -92,6 +92,7 @@ const year = 2022;
   img {
     padding-right: 25%;
     margin: 0 auto;
+    max-width: 1500px;
   }
 }
 

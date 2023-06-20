@@ -97,7 +97,7 @@
         <div class="footer footer1">
           <nuxt-img
             format="webp"
-            sizes="400px:400px 900px:650px 1000px:500px 1100px:550px"
+            sizes="400px:400px 900px:650px 1000px:900px 1100px:1000px"
             src="/img/1998_1.png"
           />
         </div>
