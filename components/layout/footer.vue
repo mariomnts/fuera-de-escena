@@ -38,7 +38,7 @@
       <article class="row">
         <div><span class="circle white">2023</span></div>
         <div>Diseño y documentación de Ignacio Incera</div>
-        <div>Desarollo web de Mario Montes</div>
+        <div>Desarrollo web de Mario Montes</div>
       </article>
     </section>
 

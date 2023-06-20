@@ -11,7 +11,7 @@
                 format="webp"
                 sizes="400px:400px 900px:650px 1000px:500px 1100px:550px"
                 src="/img/1986.png"
-                alt="Extractos de comics con Anarcoma"
+                alt="Extractos de cómics con Anarcoma"
               />
             </div>
 
@@ -22,7 +22,7 @@
               </h1>
 
               <p>
-                <b><i>Anarcoma</i></b> es un personaje de comic creado por
+                <b><i>Anarcoma</i></b> es un personaje de cómic creado por
                 Nazario. Apareció por primera vez a principios de los 80 y
                 alcanzó su mayor fama en la revista <i>El víbora</i>, revista de
                 público heterosexual. Y aunque las historias de Nazario eran
@@ -37,7 +37,7 @@
               </p>
 
               <p>
-                La segunda parte del comic se sigue publicando en 1986 a pesar
+                La segunda parte del cómic se sigue publicando en 1986 a pesar
                 de mostrar un explícito sexo homosexual, algo tan disruptivo
                 para la época.
               </p>

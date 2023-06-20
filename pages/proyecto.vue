@@ -92,7 +92,7 @@
           </article>
 
           <article>
-            <span>Desarollo web</span>
+            <span>Desarrollo web</span>
             <span>Mario Montes</span>
             <div class="buttons">
               <a

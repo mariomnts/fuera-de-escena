@@ -43,7 +43,7 @@
                 <b>Halegatos y Arcópoli iniciaron una campaña</b> en Twitter con
                 motivo del comienzo de La Liga. Utilizando los hashtags
                 #LaLigaSinHomofobia, #LaLigaSinBifobia y #LaLigaSinTransfobia,
-                <b>los usuarios interactuarían con fútbolistas</b> y
+                <b>los usuarios interactuarían con futbolistas</b> y
                 personalidades del mundo de fútbol para así darles pie a
                 expresar públicamente su respeto y compromiso con la igualdad.
               </p>
@@ -57,7 +57,7 @@
 
               <p>
                 <b
-                  >Ninguno de los fútbolistas mencionados mostró su apoyo a la
+                  >Ninguno de los futbolistas mencionados mostró su apoyo a la
                   iniciativa</b
                 >. Parece ser que sigue siendo un tema muy tabú.
               </p>

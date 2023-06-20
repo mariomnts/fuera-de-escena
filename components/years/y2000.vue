@@ -44,7 +44,7 @@
 
               <p>
                 Interpretar este papel casi le cuesta <b>una paliza</b> al actor
-                Alejo Saura. El 20 de noviembre estaba en un bar y
+                Alejo Sauras. El 20 de noviembre estaba en un bar y
                 <b>le esperaban unas 20 o 25 personas fuera para pegarle</b>.
               </p>
             </div>
