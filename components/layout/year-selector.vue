@@ -3,14 +3,11 @@
     class="custom-select"
     :tabindex="0"
     @focus="open = true"
+    @click="open = true"
+    @mouseover="open = true"
     ref="customSelect"
   >
-    <div
-      class="selected"
-      :class="{ open: open }"
-      @click="open = !open"
-      @mouseover="open = true"
-    >
+    <div class="selected" :class="{ open: open }">
       {{ selected }}
     </div>
 
@@ -21,8 +18,8 @@
           :key="i"
           :to="`/${option}`"
           @click="
-            selected = option;
             open = false;
+            selected = option;
           "
         >
           {{ option }}
@@ -34,6 +31,7 @@
 
 <script setup>
 import { YEARS_INPUT } from "../../constants";
+import { onClickOutside } from "@vueuse/core";
 
 const yearsInputOptions = Array.from(
   { length: YEARS_INPUT[1] - YEARS_INPUT[0] + 1 },
@@ -45,11 +43,7 @@ const customSelect = ref(null);
 
 const selected = ref(YEARS_INPUT[0]);
 
-watch(open, (value) => {
-  if (value) {
-    customSelect.value.focus();
-  }
-});
+onClickOutside(customSelect, () => (open.value = false));
 </script>
 
 <style lang="scss" scoped>

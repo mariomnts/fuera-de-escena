@@ -50,6 +50,10 @@ const scroll = () => {
 .header {
   height: 83vh;
 
+  &:deep(section) {
+    overflow-y: hidden;
+  }
+
   & > div {
     max-width: 800px;
     margin: 0 auto;

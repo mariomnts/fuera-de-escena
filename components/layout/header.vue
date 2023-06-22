@@ -50,7 +50,7 @@ section {
   text-align: center;
   height: 100%;
   padding: 0 5%;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 @media (max-aspect-ratio: 0.9) {
