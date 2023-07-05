@@ -13,7 +13,12 @@
         </div>
         <div>
           Si sufres malestar, acoso o necesitas orientación puedes buscar ayuda
-          en asociaciones como
+          en el
+          <a
+            href="https://www.igualdad.gob.es/comunicacion/notasprensa/Paginas/igualdad-en-marcha-servicio-028-arcoiris-lgtbi.aspx"
+            target="_blank"
+            >email, chat y teléfono 028 del Ministerio de Igualdad</a
+          >, o en asociaciones como
           <a
             href="https://felgtbi.org/que-hacemos/consulta/linea-arcoiris/"
             target="_blank"
