@@ -1,6 +1,6 @@
 # Fuera de Escena
 
-Proyecto web sobre cómo estuvo presente la LGTBIQfobia durante la adolescencia de personas nacidas entre 1959 y 2008.
+Proyecto web sobre cómo estuvo presente la LGTBIQfobia durante la adolescencia de personas nacidas entre 1959 y 2010.
 
 [**https://fueradeescena.es**](https://fueradeescena.es)
 
