@@ -1,6 +1,6 @@
 // Years with references
 export const YEARS_START = 1975;
-export const YEARS_END = 2023;
+export const YEARS_END = 2024;
 export const YEARS = [YEARS_START, YEARS_END];
 
 // Ages we want to show references to
